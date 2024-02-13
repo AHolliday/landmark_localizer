@@ -1,0 +1,1 @@
+python geotagImageExtractor.py /media/diskstation/2017-barbados/ECOMAPPER_REEF_SURVEY/2017-jan-10_Fishermans_surface/20170110_125916_bathymetry_IVER2-218.log /media/diskstation/aholliday/fishermansDataset/jan10left.txt /media/diskstation/aholliday/fishermansDataset/jan10surface -r /media/diskstation/aholliday/fishermansDataset/jan10right.txt

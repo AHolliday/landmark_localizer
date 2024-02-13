@@ -1,0 +1,24 @@
+name: vgg_all
+
+localization:
+  planar: False
+  cheat: False
+  metric: cosine
+  ransacThreshold: 6
+  subFeatureMetric: euclidean
+  # ratioThreshold: 0.15
+
+extractor:
+  type: [vgg11, vgg13, vgg16, vgg19]
+  oeKwargs:
+    feature: [pool1, pool2, pre_pool3, pool3, pre_pool4, pool4, pre_pool5, pool5]
+    patchSize: 64
+    filterSmall: False
+    filterAtEdges: False
+    siftSubFeatures: True
+    eb_params:
+      model_path: '/usr/local/faststorage/ahollid/landmark_localizer/model.yml'
+      maxBoxes: 250
+      alpha: 0.55
+      beta: 0.55
+      maxAspectRatio: 6

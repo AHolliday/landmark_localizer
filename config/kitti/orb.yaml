@@ -1,0 +1,14 @@
+localization:
+  planar: False
+  metric: euclidean
+  ransacThreshold: 6
+
+extractor:
+  type: orb
+
+  # orbParams:
+  #   # default values
+  #   nFeatures: 500
+  #   scaleFactor: 1.2 # filter out keypoints on very smooth, therefore unstable, corners.  Higher values = less agressive filtering.
+  #   nLevels: 8 # sigma of the base gaussian for the DOG sub-pyramids.
+  #   edgeThreshold: 31

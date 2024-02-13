@@ -1,0 +1,39 @@
+syntax: glob
+
+# python configuration file
+constants.py
+
+# ignore temporary files
+\#*\#
+*~
+
+# compiled python files
+*.pyc
+
+# various specific files I don't want to commit
+TODO.txt
+commitMsg.txt
+
+# caffe weights and solver states
+*.caffemodel
+*.solverstate
+*.caffemodel.h5
+*.solverstate.h5
+
+# log files
+*.log
+*.txt
+
+# images
+*.png
+
+# stored data
+*.pkl
+*.csv
+*.yml
+
+# configs that I don't explicitly add
+config/**.yaml
+
+# weird files generated automatically by hg
+hg-checkexec-*

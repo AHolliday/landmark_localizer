@@ -1,0 +1,28 @@
+name: resnet_res4f_64
+
+localization:
+  planar: False
+  cheat: False
+  metric: cosine
+  ransacThreshold: 6
+  subFeatureMetric: euclidean
+  # ratioThreshold: 0.15
+
+extractor:
+  type: resnet_50
+  oeKwargs:
+    featureBlobNames: [[res4f]]
+    # [res4f, res5c], [res3d, res4f, res5c], [res2c, res3d, res4f, res5c]]
+    # caffeProto: "/localdata/aholliday/deep-residual-networks/prototxt/ResNet-50-64.prototxt"
+    caffeProto: "/localdata/aholliday/deep-residual-networks/prototxt/ResNet-50-64.prototxt"
+    filterSmall: False
+    filterAtEdges: False
+    siftSubFeatures: True
+
+  selectiveSearchParams:
+    scale: 500
+    sigma: 0.9
+    min_size: 10
+    filterKwargs:
+      minSize: 200
+      maxRatio: 3

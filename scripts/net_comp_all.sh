@@ -1,0 +1,23 @@
+python -m pdb scripts/plot_sequence_results.py \
+--r ../kitti/final_results/alex_results_all01_sub5_gap_10.pkl \
+--r ../kitti/final_results/alex_results_all06_sub5_gap_10.pkl \
+--r ../kitti/final_results/alex_results_all07_sub5_gap_10.pkl \
+--r ../kitti/final_results/vgg_all_results_all01_sub5_gap_10.pkl \
+--r ../kitti/final_results/vgg_all_results_all06_sub5_gap_10.pkl \
+--r ../kitti/final_results/vgg_all_results_all07_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet50_results_all01_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet50_results_all06_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet50_results_all07_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet101_results_all01_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet101_results_all06_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet101_results_all07_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet152_results_all01_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet152_results_all06_sub5_gap_10.pkl \
+--r ../kitti/final_results/resnet152_results_all07_sub5_gap_10.pkl \
+--r ../kitti/final_results/densenet_all_results_all01_sub5_gap_10.pkl \
+--r ../kitti/final_results/densenet_all_results_all06_sub5_gap_10.pkl \
+--r ../kitti/final_results/densenet_all_results_all07_sub5_gap_10.pkl \
+--r ../kitti/final_results/densenet161_results_all01_sub5_gap_10.pkl \
+--r ../kitti/final_results/densenet161_results_all06_sub5_gap_10.pkl \
+--r ../kitti/final_results/densenet161_results_all07_sub5_gap_10.pkl \
+--merge --nets

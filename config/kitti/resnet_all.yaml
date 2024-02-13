@@ -1,0 +1,23 @@
+name: resnet_all
+localization:
+  planar: False
+  cheat: False
+  metric: cosine
+  ransacThreshold: 6
+  subFeatureMetric: euclidean
+
+extractor:
+  type: [resnet50, resnet101, resnet152]
+  oeKwargs:
+    feature: [pool1, res2c, res3d, res4f, res5c]
+    patchSize: 64
+    filterSmall: False
+    filterAtEdges: False
+    siftSubFeatures: True
+
+    eb_params:
+      model_path: '/usr/local/faststorage/ahollid/landmark_localizer/model.yml'
+      maxBoxes: 250
+      alpha: 0.55
+      beta: 0.55
+      maxAspectRatio: 6

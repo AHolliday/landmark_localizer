@@ -1,0 +1,11 @@
+name: D2Net
+
+localization:
+  planar: False
+  metric: euclidean
+  ransacThreshold: 6
+
+extractor:
+  type: d2net
+  oeKwargs:
+    max_features: 3500
